@@ -1,5 +1,5 @@
 {
-  "name": "app-layout",
+  "name": "therapychat/app-layout",
   "description": "Web Component to display an incremental timer",
   "main": "app-layout.html",
   "demos": {
