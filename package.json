@@ -1,0 +1,46 @@
+{
+  "name": "@therapychat/app-layout",
+  "version": "0.0.0",
+  "description": "Web Components to layout apps",
+  "main": "app-layout.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "polymer build",
+    "lint": "npm run lint:js && npm run lint:polymer",
+    "lint:js": "eslint --ext js,html --ignore-path .gitignore .",
+    "lint:polymer": "polymer lint",
+    "start": "polymer serve",
+    "test": "polymer test",
+    "preversion": "npm run lint && npm test",
+    "version": "changelog-version && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TherapyChat/app-layout.git"
+  },
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer",
+    "layout",
+    "app-layout"
+  ],
+  "author": "Alberto Fernandez <albertofdzm@gmail.com> (http://onlythepixel.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TherapyChat/app-layout/issues"
+  },
+  "homepage": "https://github.com/TherapyChat/app-layout#readme",
+  "devDependencies": {
+    "changelog-version": "^1.0.1",
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

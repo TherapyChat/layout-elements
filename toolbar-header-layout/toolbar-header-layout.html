@@ -1,0 +1,40 @@
+<link rel="import" href="../../polymer/polymer.html">
+
+<dom-module id="toolbar-header-layout">
+  <template>
+    <style>
+      :host {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+
+      .header-container {
+        flex: none;
+      }
+
+      .content-container {
+        flex: 1 1 100%;
+        height: 100%;
+        overflow-x: auto;
+      }
+    </style>
+
+    <div class="header-container">
+      <slot name="header"></slot>
+    </div>
+
+    <div class="content-container">
+      <slot></slot>
+    </div>
+
+  </template>
+  <script>
+    Polymer({
+
+      is: 'toolbar-header-layout'
+
+    })
+  </script>
+</dom-module>

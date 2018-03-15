@@ -1,0 +1,40 @@
+{
+  "name": "app-layout",
+  "description": "Web Component to display an incremental timer",
+  "main": "app-layout.html",
+  "demos": {
+    "Demos": "demo/index.html"
+  },
+  "authors": [
+    "Therapychat <contacto@therapychat.com> (http://therapychat.com)",
+    "Alberto Fernandez <albertofdzm@gmail.com> (http://onlythepixel.com)"
+  ],
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer",
+    "timer",
+    "time",
+    "counter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TherapyChat/app-layout.git"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/TherapyChat/app-layout",
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.11.3",
+    "app-layout": "PolymerElements/app-layout#^2.0.5"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.24",
+    "iron-component-page": "PolymerElements/iron-component-page#^3.0.1"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.24"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "assert": true,
+    "a11ySuite": true,
+    "expect": true,
+    "fixture": true,
+    "flush": true,
+    "replace": true,
+    "setup": true,
+    "sinon": true,
+    "stub": true,
+    "WCT": true
+  }
+}
