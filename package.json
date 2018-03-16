@@ -1,8 +1,8 @@
 {
-  "name": "@therapychat/app-layout",
+  "name": "@therapychat/layout-elements",
   "version": "0.0.0",
   "description": "Web Components to layout apps",
-  "main": "app-layout.html",
+  "main": "layout-elements.html",
   "directories": {
     "test": "test"
   },
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TherapyChat/app-layout.git"
+    "url": "git+https://github.com/TherapyChat/layout-elements.git"
   },
   "keywords": [
     "web-components",
@@ -30,9 +30,9 @@
   "author": "Alberto Fernandez <albertofdzm@gmail.com> (http://onlythepixel.com)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/TherapyChat/app-layout/issues"
+    "url": "https://github.com/TherapyChat/layout-elements/issues"
   },
-  "homepage": "https://github.com/TherapyChat/app-layout#readme",
+  "homepage": "https://github.com/TherapyChat/layout-elements#readme",
   "devDependencies": {
     "changelog-version": "^1.0.1",
     "eslint": "^4.1.1",

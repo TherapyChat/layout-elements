@@ -1,14 +1,14 @@
-[![Build status](https://travis-ci.org/TherapyChat/app-layout.svg?branch=master)](https://travis-ci.org/TherapyChat/app-layout)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/therapychat/app-layout)
+[![Build status](https://travis-ci.org/TherapyChat/layout-elements.svg?branch=master)](https://travis-ci.org/TherapyChat/layout-elements)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/therapychat/layout-elements)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
-# \<app-layout\>
+# \<layout-elements\>
 
 Web Component to display an incremental timer
 
 Intall:
 ```bash
-bower install -S app-layout
+bower install -S layout-elements
 ```
 
 Example of use:
@@ -17,7 +17,7 @@ Example of use:
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="app-layout.html">
+    <link rel="import" href="layout-elements.html">
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -37,7 +37,7 @@ Example of use:
 
 ## Documentation
 
-Checkout the [webcomponents page](https://www.webcomponents.org/element/therapychat/app-layout).
+Checkout the [webcomponents page](https://www.webcomponents.org/element/therapychat/layout-elements).
 
 ## Changelog
 
@@ -49,11 +49,11 @@ Please read [CONTRIBUTING](./CONTRIBUTING.md) file to follow good practices.
 
 You will need [NodeJS](https://nodejs.org).
 
-1. Close the repo: `git clone git@github.com:TherapyChat/app-layout.git`
+1. Close the repo: `git clone git@github.com:TherapyChat/layout-elements.git`
 1. Install dependencies: `npm install`
 1. Code!
 1. Test: `npm test`
-1. Create a [Pull Request](https://github.com/therapychat/app-layout/pulls)
+1. Create a [Pull Request](https://github.com/therapychat/layout-elements/pulls)
 
 ### Contributors
 
