@@ -1,6 +1,6 @@
 {
   "name": "layout-elements",
-  "description": "Web Component to display an incremental timer",
+  "description": "Web Components to layout apps",
   "main": "layout-elements.html",
   "demos": {
     "Demos": "demo/index.html"
@@ -13,9 +13,8 @@
     "web-components",
     "web-component",
     "polymer",
-    "timer",
-    "time",
-    "counter"
+    "layout",
+    "app-layout"
   ],
   "repository": {
     "type": "git",
