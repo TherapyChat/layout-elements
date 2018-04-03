@@ -10,15 +10,19 @@ cache:
   directories:
   - bower_components
   - node_modules
+deploy:
+  provider: npm
+  email: albertofdzm@gmail.com
+  api_key:
+    secure: iUUf7AoL+xCLAaC2GmCQQn/2554eZghwSiaSWGzxVm/7swbDshECWG0f3FmWrdJIcLNPkf9A7jOf9mnzyYDl7B0yExsdJdaUb1ky3AXjex5UDuXgM0+9WTV2RPyKiwnHFwFbMB0S3bkZIACUDlW+WvsfpoYzSgr1PJQh4cYt+995MqkwibDpZSibUTVSnnWR4pQTvpMukkj11uykqoNJLfOVp+59M4k6uziCD3qKjciNusdBNmTLpwOoLnqurBLvPreTLJoe7V3ZRuRSZQsz3x4mgAd2OVCiPQprT+N169QNiYv/3EIo9MU5RI0OcON+jDgNR9wbE3qeCZQKLn3yWuH0piy7WwViPw8pPfPKmy7PnUyM5kM5C6Rhbt1dMBva1Z85qaFbBYDt/szxt9keUBVV2sVNYnShsUDOJLC1P+AFS8+052GrF/ofXHd3/OLz1GTQfP3WZIOagFTUZqMY58POt8ZSX592Ng7uyw9GYpzGgxhsf7FKYvhn3wiSye/Y/ZLllfqLx/FJQpvF4820CfFFrRPwYm7q56x/5H6hWoc8Uxmc/nkLAar+0r3Kn0JspUhyvlmS6lI1YwcHHJ5Eu/9ADl3ADLXGANKl+G4ci7UlbQ6UJiOEMJ0xhn7FomchPC06IEG8bgtMIbQbqFuSlOxBVP8DQ1Q28acH6Z4BKB8=
 before_script:
 - npm install -g polymer-cli
 - polymer install
 script:
 - polymer lint
 - xvfb-run polymer test
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ];
-  then polymer test --plugin sauce --skip-plugin local;
-  fi
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then polymer test --plugin sauce --skip-plugin
+  local; fi
 env:
   global:
   - secure: TvIwaqes3argt7JDxjPDtNeoum1bk+fJ6iRrodiWKzhcuP8CLCsxe9ACBzaOkVnw6GrW9A+MpZngoq2gmOWV5X22gI9IpYWQzI7IjQlWKajXz3GyD8Q17U+t7sv4TyqPgk/PO/OcpuO3RBmzgcHyBdeNaqotqlpfeMSfJfVW4YCoJ6YMBsoJse4FQ0dOKGVxOOiA4PxeI47ZKaJPflvWqAoROasyc1ivSzUXsmEJmEuVJvCAf3GZX9D8hg7n9lyW+1C+heUpaoNSSTdect9PMmJpxy1uRHnxb161ApZ2WMxMTAQkSqZnWVc5+27EDXupuL0zaDUG3WQi684n1oGpbltuvB1uOqHgoFYI0Pw5Y1UD7gugoDKPn0ihuL3lL1QgCUiEh6PzOBfyfWAIwTXT2h90yPdTJF6FRRdPcAZ1VRCBB3gP93AJBRYRWzj0xeWjFvazgLTux/LSlxhTDhBOiMLwFL01Zq+nrYdFQ6oVDOo6L7iiK8NQ2p6KIJyfVFuM6Kl4I3f8tHYTBVD6am4l1KTCXpNITP7NArBMAL+HdQ6SOOsTcmxrKNn9FZoOKs2+m2+XCUYWkhjp0yNydUFTuBdZyQIAW5lvTjfnskpthztFipl20j7sDMm+/IqOd3G6iDl3FU2UKxfW/Tl5Ufw2B2zwOJWzvY26jDHg09PZTVM=
