@@ -17,6 +17,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 
+## [UNRELEASED]
+### Added
+- Added `position` property to set drawer position to `left` or `right`
+### Removed
+- Removed unnused style code
+
+
+
+
 ## v1.0.0 - 2018-03-19
 ### Added
 - `absolute-drawer`
