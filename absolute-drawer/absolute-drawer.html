@@ -12,7 +12,8 @@
         left: -150%;
         width: 100%;
         z-index: 1;
-        transition: left .2s ease;
+        transition-property: left;
+        transition-timing-function: ease;
       }
 
       :host([opened]) {
@@ -31,7 +32,7 @@
       :host([position='right']) {
         left: auto;
         right: -150%;
-        transition: right .2s ease;
+        transition-property: right;
       }
 
       :host([opened][position='right']) {
@@ -82,11 +83,19 @@
           type: String,
           value: 'left',
           reflectToAttribute: true
+        },
+        /**
+         * The transition duration of the drawer in milliseconds.
+         */
+        transitionDuration: {
+          type: Number,
+          value: 200
         }
       },
 
       observers: [
-        'resetLayout(isAttached)'
+        'resetLayout(isAttached)',
+        '_styleTransitionDuration(transitionDuration)'
       ],
 
       attached: function () {
@@ -100,6 +109,10 @@
        */
       resetLayout: function () {
         this.fire('app-reset-layout')
+      },
+
+      _styleTransitionDuration: function (duration) {
+        this.style.transitionDuration = duration + 'ms'
       }
 
       /**
