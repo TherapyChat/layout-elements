@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 
-## [UNRELEASED]
+## v1.2.0 - 2018-04-19
 ### Changed
 - Now the drawer transition duration can be set by property `transitionDuration` and will be set at initialization.
 
